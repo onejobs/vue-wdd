@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 1)引入vue文件 -->
+    <script src="./vue.js"></script>
+
+
+
+    <!-- 2) 创建一个div容器 -->
+    <div id="app">
+        {{city}}
+    </div>
+
+
+
+    <!--  3) 创建一个vue实例化对象 -->
+    <script>
+        var vm = new Vue({
+            el: '#app',
+            data: {
+                city: '北京'
+            }
+        })
+    </script>
+
+
+
+</body>
+
+</html>
